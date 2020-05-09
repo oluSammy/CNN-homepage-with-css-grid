@@ -1,0 +1,40 @@
+$color-primary: #cc0000;
+
+$color-dark-1: #0c0c0c;
+$color-dark-2: #1A1A1A;
+
+$background-color: #FEFEFE;
+
+$color-grey-header: #262626;
+$color-grey-text: #404046;
+$color-grey-3: #D9D9D9;
+
+$font-primary:  'Helvetica', Arial, sans-serif ;
+
+$text-font: 1.5rem;
+$h2-font: 2rem;
+
+
+//global reset
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;       // 10 / 16 = 62.5;
+}
+
+body{
+    font-family: $font-primary;
+    background-color: $background-color;
+    color: $color-grey-text;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+

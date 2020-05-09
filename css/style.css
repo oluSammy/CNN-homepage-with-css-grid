@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+  background-color: #FEFEFE;
+  color: #404046;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
