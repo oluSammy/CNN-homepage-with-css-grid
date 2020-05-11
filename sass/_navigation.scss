@@ -1,0 +1,35 @@
+.navigation{
+    grid-row: 2 / 3;
+    grid-column: col-start 1/ col-end 8;
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        padding: 2rem 0;
+
+        &--item{
+            border-right: 2px solid $color-grey-3;
+            padding-right: 1rem;
+            margin-right: 1.3rem;
+
+        }
+
+        &--text{
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            color: $color-dark-1;
+            cursor: pointer;
+
+            &:hover{
+                color: $color-primary;
+            }
+
+            & span{
+                color: $color-primary;
+                text-transform: uppercase;
+            }
+            
+        }
+    }
+}

@@ -5,12 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/cnn-favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <title>cnn homepage clone with css grid</title>
+    <title>CNN homepage clone with css grid</title>
 </head>
 <body>
-    <h1>HELLO CNN</h1>
-    <p>
-        The US -- usually at the head of the table to coordinate in global crises -- is now declining to take a seat
-    </p>
+    <div class="container">
+        <header class="header">
+            <nav class="top-nav">
+                <ul class="top-nav__list">
+                    <li class="top-nav__logo-box">
+                        <img src="./img/cnn-logo.png" alt="logo" class="top-nav__logo">
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">World</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">US Politics</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">business</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">health</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">entertainment</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">style</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">travel</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">sports</p>
+                    </li>
+                    <li class="top-nav__item">
+                        <p class="top-nav__item-text">videos</p>
+                    </li>
+                </ul>
+                <ul class="top-nav__icons">
+                    <svg class="top-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
+                    </svg>
+                    <svg class="top-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <svg class="top-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                </ul>
+            </nav>
+        </header>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"><span>Coronavirus:</span> Latest Updates</p>
+                </li>
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"> All Coronavirus stories</p>
+                </li>
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"> Global virus map</p>
+                </li>
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"> Podcast</p>
+                </li>
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"> Newsletter</p>
+                </li>
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"> Ramadan</p>
+                </li>
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"><span>Trending:</span> Little Richard</p>
+                </li>
+                <li class="navigation__list--item">
+                    <p class="navigation__list--text"> Shark Attack</p>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <div class="main__section1">
+                <h1 class="heading-1">Johnson eases UK lockdown</h1>
+                <div class="news-box">
+                    <div class="news-box__top">
+                        <img src="./img/boris johnson.jpg" alt="" class="news-box__photo">
+                        <p class="red-headline__text">Breaking News</p>
+                    </div>
+                    <h4 class="heading-4">The British Prime Minister announced the changes as he called on millions to go back to work</h4>
+                    <ul class="news-box__taglines">
+                        <li class="news-box__tagline"><span>Live Updates</span>&nbsp;People flying into the UK will have to quarantine</li>
+                        <li class="news-box__tagline">British man makes face shields for police after officer was spat on</li>
+                        <li class="news-box__tagline">Study shows alcohol consumption rising during lockdown
+                            <svg class="news-box__icon">
+                                <use xlink:href="img/sprite.svg#icon-play2"></use>
+                            </svg>
+                        </li>
+                        <li class="news-box__tagline">Ethnic minorities in England and Wales dying from coronavirus at higher rates than white peers, study suggests</li>                            
+                    </ul>                    
+                </div>
+            </div>
+            <div class="main__section2">
+                <div class="news-box mb-small">
+                    <div class="news-box__top">
+                        <img src="./img/coro vaccinne.jpg" alt="" class="news-box__photo">
+                        <p class="red-headline__text">Live Updates</p>
+                    </div>
+                    <h4 class="heading-2">Johnson and johnson aims to produce 1 billion coronavirus vaccines for next year</h4>
+                    <ul class="e-ul">
+                        <li class="e-li"><span>News in brief: </span>Two new hotspots emerge</li>
+                    </ul>                                        
+                </div>
+                <div class="news-box">
+                    <div class="news-box__top">
+                        <img src="./img/cities.jpg" alt="" class="news-box__photo">                        
+                    </div>
+                    <h4 class="heading-2">Our cities may never look the same after the pandemic</h4>                                        
+                </div>
+            </div>
+            <div class="main__section3">
+                <div class="news-box">
+                    <div class="news-box__top">
+                        <img src="./img/faceless.jpg" alt="" class="news-box__photo">                        
+                    </div>
+                    <h4 class="heading-2">Our faceless future is a world of opportunity for criminals and terrorists</h4>
+                    <ul class="news-box__taglines">
+                        <li class="news-box__tagline">A cluster of coronavirus cases was traced to a coughing patient at a birthday party</li>
+                        <li class="news-box__tagline">Airlines say massive job cuts are coming</li>
+                        <li class="news-box__tagline">Rare blue dragons are washing up on the Padre Island National Seashore</li>
+                        <li class="news-box__tagline">26-year-old surfer killed in shark attack</li>                            
+                        <li class="news-box__tagline"><span>ANALYSIS: </span> &nbsp;Biden's lead is steadiest on record</li>                            
+                        <li class="news-box__tagline">The mysterious illness that could be linked to coronavirus in children</li>                            
+                        <li class="news-box__tagline">'Stunning': Clinton cabinet member reacts to Trump's no-mask meeting</li>                            
+                    </ul>                    
+                </div>
+            </div>
+        </main>
+        <div class="newsbuzz">
+            newsbuzz
+        </div>
+        <div class="featured">
+            featured section
+        </div>
+        <div class="watch">
+            watch it
+        </div>
+        <div class="photos">
+            photos you should see
+        </div>
+        <footer class="footer">
+            footer
+        </footer>        
+    </div>
 </body>
 </html>

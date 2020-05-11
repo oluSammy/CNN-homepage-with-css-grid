@@ -1,0 +1,21 @@
+.main{
+    grid-row: 3 / 4;
+    grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: minmax(min-content, 45rem)  repeat(2, minmax(min-content, 1fr));
+    grid-column-gap: 2rem;
+}
+
+.e-ul{
+    list-style-position: inside;
+}
+
+.e-li{
+    border-bottom: 2px solid $color-grey-3;
+
+    & span{
+        color: $color-grey-header;
+        font-weight: 700;
+    }
+}

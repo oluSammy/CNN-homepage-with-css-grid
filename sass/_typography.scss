@@ -1,1 +1,44 @@
+.heading-1{
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 6.2rem;
+    color: $color-grey-header;
+    text-align: center;
+    cursor: pointer;
 
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+.heading-2{
+    font-size: 2rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+    color: $color-grey-header;
+    margin-bottom: .8rem;
+    cursor: pointer;
+
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+.heading-4{
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+    color: $color-grey-header;
+    margin-bottom: .8rem;
+    cursor: pointer;
+
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+
+//utilities
+.mb-small{
+    margin-bottom: 2rem;
+}
