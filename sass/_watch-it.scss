@@ -1,6 +1,33 @@
 .watch{
-    background-color: teal;
-
-    grid-row: 6 / 7;
+    grid-row: 7 / 8;
     grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    // grid-template-columns: repeat(8, 1fr);
+
+    &__header{
+        grid-column: 1 / -1;
+        margin: 2rem 0;
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-column-gap: 2rem;
+
+        &-videos{
+            grid-column: 1 / -1;
+
+            // display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            // grid-gap: 3rem;
+        }
+    }
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-column-gap: 2rem;
 }

@@ -1,0 +1,21 @@
+.look{
+    grid-row: 5 / 6;
+    grid-column: center-start / center-end;   
+    margin-top: 2rem; 
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+.closer{
+    grid-column: 1 / 2;
+}
+
+.feature{
+    grid-column: 2 / 3;
+}
+
+.break{
+    grid-column: 3 / 4;
+}

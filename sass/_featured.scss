@@ -1,6 +1,43 @@
 .featured{
-    background-color: royalblue;
-
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     grid-column: center-start / center-end;
+
+    display: grid;
+
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
+    &__header{
+        grid-column: 1 / -1;
+    }
+
+    &__business{
+
+    }
+
+    &__sport{
+        grid-column: 1 / 2;
+    }
+    
+    &__style{
+        
+    }
+    
+    &__opinion{
+        
+    }
+
+    &__politics{
+        
+    }
+
+    &__tech{
+
+    }
+        
+
+    &__entertainment{
+        
+    }
 }

@@ -3,7 +3,7 @@
     grid-column: center-start / center-end;
 
     display: grid;
-    grid-template-columns: minmax(min-content, 45rem)  repeat(2, minmax(min-content, 1fr));
+    grid-template-columns: minmax(min-content, 1.5fr)  repeat(2, minmax(min-content, 1fr));
     grid-column-gap: 2rem;
 }
 
