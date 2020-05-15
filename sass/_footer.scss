@@ -1,7 +1,138 @@
 .footer{
-    background-color: black;
-
+    background-color: $color-dark-1;
+    padding: 5rem 0;
     
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     grid-row: 9 / 10;
+
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) [center-start] repeat(7, minmax(min-content, 17.8rem)) [center-end] minmax(2rem, 1fr);
+    grid-row-gap: 3rem;
+
+    &__search{
+        grid-column: center-start / center-end;
+
+        &-form{
+            display: flex;
+        }
+
+        &-input{
+            width: 100%;
+            padding: 1.2rem .5rem;
+            border-radius: 3px;
+            border: none;
+        }
+
+        &-input::placeholder{
+            font-size: 1.5rem;
+            color: $color-grey-text;
+        }
+
+        &-submit{
+            margin-left: -9rem;
+            display: flex;
+            align-items: center;
+
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        &-icon{
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-left: .5rem;
+            // fill: orangered;
+        }
+    }
+
+    &__nav1{
+        grid-column: center-start / center-end;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+        grid-row-gap: 3rem;
+
+        &-list{
+            list-style-type: none;
+            color: $color-white;
+
+            &-header{
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            &-item{
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__social{
+        grid-column: center-start / center-end;
+        padding-bottom: 3rem;
+        border-bottom: .5px solid $color-grey-3;
+
+        display: flex;
+
+        &-logo{
+            margin-right: auto;
+
+            & img{
+                height: 2.5rem;
+            }
+        }
+
+        &-wrapper{
+            display: flex;
+            align-items: center;
+
+            & p{
+                color: $color-white;
+                margin-right: 2rem;
+                padding-right: 2rem;
+                border-right: 1px solid $color-white;
+            }
+
+            & svg{
+                height: 2.5rem;
+                width: 2.5rem;
+                fill: $color-white;
+            }
+
+            & svg:not(:last-child){
+                margin-right: 1.4rem;
+            }
+        }
+    }
+
+    &__nav2{
+        grid-column: center-start / center-end;
+
+        &-list{
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        & li{
+            color: $color-white;
+            font-size: 1.2rem;
+        }
+
+        & li:not(:last-child){
+            margin-right: 1.7rem;
+        }
+    }
+
+    &__copyright{
+        grid-column: center-start / center-end;
+
+        & p{
+            font-size: 1.4rem;
+            color: $color-white;
+        }
+    }
 }
