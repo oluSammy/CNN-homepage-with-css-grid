@@ -1,3 +1,5 @@
+
+//color variables
 $color-primary: #cc0000;
 
 $color-dark-1: #0c0c0c;
@@ -11,10 +13,19 @@ $color-grey-header: #262626;
 $color-grey-text: #404046;
 $color-grey-3: #D9D9D9;
 
+
+//font-family variables
 $font-primary:  'Helvetica', Arial, sans-serif ;
 
+//font-size variables
 $text-font: 1.5rem;
 $h2-font: 2rem;
+
+
+//responsive breakpoints
+$bp-largest: 60em;
+
+$bp-phone: 37.25em;
 
 
 //global reset

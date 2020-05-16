@@ -6,6 +6,8 @@
     grid-template-rows: repeat(2, min-content);
     // grid-template-columns: repeat(8, 1fr);
 
+    
+
     &__header{
         grid-column: 1 / -1;
         margin: 2rem 0;
@@ -16,12 +18,21 @@
         grid-template-columns: 2.5fr 1fr;
         grid-column-gap: 2rem;
 
-        &-videos{
-            grid-column: 1 / -1;
+        @media only screen and (max-width: $bp-largest) {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-            // display: grid;
-            // grid-template-columns: repeat(3, 1fr);
-            // grid-gap: 3rem;
+        &--videos{
+
+            @media only screen and (max-width: $bp-largest) {
+                grid-column: 1 / -1;                
+            }
+        }
+
+        &--trending{
+            @media only screen and (max-width: $bp-phone) {
+                grid-column: 1 / -1;                
+            }
         }
     }
 }

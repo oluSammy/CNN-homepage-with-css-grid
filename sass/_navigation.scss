@@ -5,6 +5,7 @@
     &__list{
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
         padding: 2rem 0;
 
         &--item{

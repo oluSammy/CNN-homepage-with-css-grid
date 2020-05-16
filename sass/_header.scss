@@ -21,6 +21,7 @@
     &__logo{
         height: 2.5rem;
         margin-right: 1.5rem;
+        margin-left: 1rem;
         align-self: center;
         margin-top: .4rem;
         // align-self: stretch;      
@@ -57,5 +58,9 @@
 
     &__icon:not(:first-child){
         margin-left: 2rem;
+    }
+
+    &__icon:last-child{
+        margin-right: 1rem;
     }
 }
