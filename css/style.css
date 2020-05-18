@@ -39,13 +39,13 @@ body {
   grid-column: full-start/full-end;
   padding: 0.7rem 0;
   position: fixed;
-  width: 99.1%;
+  width: 100%;
   z-index: 9999999;
 }
 
 .top-nav {
   display: flex;
-  max-width: 124.6rem;
+  max-width: 80%;
   margin: 0 auto;
 }
 .top-nav__list {
