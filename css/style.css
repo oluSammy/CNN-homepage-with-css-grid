@@ -11,10 +11,6 @@ html {
   font-size: 62.5%;
 }
 
-* {
-  border: 1px solid red;
-}
-
 body {
   font-family: "Helvetica", Arial, sans-serif;
   background-color: #FEFEFE;
