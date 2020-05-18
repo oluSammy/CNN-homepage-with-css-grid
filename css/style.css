@@ -17,6 +17,7 @@ body {
   color: #404046;
   font-size: 1.5rem;
   line-height: 2rem;
+  max-width: 100%;
 }
 
 .container {
