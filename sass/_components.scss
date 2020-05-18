@@ -40,7 +40,7 @@
     &__news-video{
         border-top: 1px solid $color-grey-3;;
         display: flex;
-        align-items: start;
+        align-items: flex-start;
 
         &:not(:first-child){
             margin-top: .5rem;
