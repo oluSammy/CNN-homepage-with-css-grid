@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: minmax(min-content, 1.5fr)  repeat(2, minmax(min-content, 1fr));
     grid-column-gap: 2rem;
+    
 
     @media only screen and (max-width: $bp-largest) {
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
@@ -12,6 +13,7 @@
 
     @media only screen and (max-width: $bp-phone) {
         grid-template-columns: 1fr;
+        padding: 0 3px;
     }
 
     &__section1{
