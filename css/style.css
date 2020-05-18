@@ -18,6 +18,7 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -142,6 +143,11 @@ body {
   color: #cc0000;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 60em) {
+  .navigation {
+    display: none;
+  }
+}
 
 .main {
   grid-row: 3/4;
@@ -163,6 +169,11 @@ body {
 @media only screen and (max-width: 60em) {
   .main__section1 {
     grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 60em) {
+  .main {
+    margin-top: 4rem;
   }
 }
 
