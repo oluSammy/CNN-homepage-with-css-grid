@@ -3,7 +3,10 @@
 
     grid-row: 1 / 2;
     grid-column: full-start / full-end;
-    padding: 1rem 0;
+    padding: .7rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
 }
 
 .top-nav{
@@ -37,7 +40,13 @@
             font-weight: 400;
             line-height: 1.2rem;
             text-transform: capitalize;
+
+            @media only screen and (max-width: $bp-largest) {
+                display: none;     
+            }
         }
+
+        
     }
 
     &__item:not(:last-child){
@@ -63,4 +72,41 @@
     &__icon:last-child{
         margin-right: 1rem;
     }
+
+    &__hamburger{
+        margin-left: 2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        &-line{
+            width: 2rem;
+            height: 1px;
+            background-color: $color-white;
+            
+            &:not(:last-child){
+                margin-bottom: 4.3px;
+            }
+        }
+    }
+}
+
+.remove-on-mobile{
+    @media only screen and (max-width: $bp-largest) {
+        display: none;     
+    }
+}
+
+.display-none{
+    display: none;
+}
+
+.top-line{
+
+}
+
+.mid-line{
+
+}
+
+.bottom-line{
+
 }

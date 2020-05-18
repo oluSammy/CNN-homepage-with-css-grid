@@ -21,6 +21,7 @@ body {
 
 .container {
   display: grid;
+  position: relative;
   grid-template-rows: repeat(9, min-content);
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 13.75rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   grid-row-gap: 1rem;
@@ -30,7 +31,10 @@ body {
   background-color: #0c0c0c;
   grid-row: 1/2;
   grid-column: full-start/full-end;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999999;
 }
 
 .top-nav {
@@ -59,6 +63,11 @@ body {
   line-height: 1.2rem;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 60em) {
+  .top-nav__item p {
+    display: none;
+  }
+}
 .top-nav__item:not(:last-child) {
   margin-right: 1.5rem;
 }
@@ -78,8 +87,32 @@ body {
 .top-nav__icon:last-child {
   margin-right: 1rem;
 }
+.top-nav__hamburger {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.top-nav__hamburger-line {
+  width: 2rem;
+  height: 1px;
+  background-color: #ffffff;
+}
+.top-nav__hamburger-line:not(:last-child) {
+  margin-bottom: 4.3px;
+}
+
+@media only screen and (max-width: 60em) {
+  .remove-on-mobile {
+    display: none;
+  }
+}
+
+.display-none {
+  display: none;
+}
 
 .navigation {
+  margin-top: 4rem;
   grid-row: 2/3;
   grid-column: col-start 1/col-end 8;
 }
@@ -311,6 +344,7 @@ body {
 .footer {
   background-color: #0c0c0c;
   padding: 5rem 0;
+  min-height: 100vh;
   grid-column: full-start/full-end;
   grid-row: 9/10;
   display: grid;
@@ -377,7 +411,12 @@ body {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
+}
+@media only screen and (max-width: 60em) {
+  .footer__nav1-list-header {
+    text-align: center;
+  }
 }
 .footer__nav1-list-item {
   font-size: 1.2rem;
