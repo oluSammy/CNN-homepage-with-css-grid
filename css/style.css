@@ -27,6 +27,7 @@ body {
   grid-template-rows: repeat(9, min-content);
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 13.75rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   grid-row-gap: 1rem;
+  padding: 0 4px;
 }
 @media only screen and (max-width: 60em) {
   .container {
