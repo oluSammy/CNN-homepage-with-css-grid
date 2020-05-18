@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  border: 1px solid red;
+}
+
 body {
   font-family: "Helvetica", Arial, sans-serif;
   background-color: #FEFEFE;
@@ -35,7 +39,7 @@ body {
   grid-column: full-start/full-end;
   padding: 0.7rem 0;
   position: fixed;
-  width: 100%;
+  width: 99.1%;
   z-index: 9999999;
 }
 
